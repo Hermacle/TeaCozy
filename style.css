@@ -1,0 +1,129 @@
+* {
+  opacity: 0.9;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+html {
+  font-family: Helvetica;
+  font-size: 22px;
+  text-align: center;
+  color: seashell;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
+}
+header {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  display: flex;
+  min-height: 69px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  background-color: black;
+  opacity: 1;
+  box-shadow: 2px 2px 6px #0096fa9a;
+
+}
+
+header .logo {
+  height: 50px;
+  margin-left: 10px;
+}
+
+header a {
+  color: seashell;
+  margin-right: 15px;
+}
+
+main {
+  margin: 0 60px;
+}
+
+
+main #mission {
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+  position: relative;
+  top: 70px;
+  height: 700px;
+  width: 100%;
+  padding-bottom: 60px;
+}
+main #mission h2, main #mission h4{
+  padding: 0.4em;
+}
+
+main .heading {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+
+main #featured_tea {
+  position: relative;
+  flex-wrap: wrap;
+  flex-basis: 300px;
+  margin-bottom: 40px;
+}
+
+main #featured_tea figure img {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+  transition: ease-out 400ms;
+  cursor: pointer;
+}
+main #featured_tea figure:hover img {
+  transform: scale(1.02);
+}
+main #featured_tea figure{
+  transition: ease-in-out 400ms;
+}
+main #featured_tea figure:hover figcaption {
+  font-weight: 700;
+  color: #63ccfd;
+}
+
+main #locations {
+  flex-direction: row;
+  align-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  width: 100%;
+  line-height: 65px;
+}
+
+#locations .item {
+  width: 300px;
+  margin: 15px 40px;
+  opacity: 1;
+  background-color: black;
+  transition: ease-out 600ms;
+}
+#locations .item:hover {
+  transform: scale(1.04);
+  box-shadow: 2px 2px 6px #0096fa9a;
+}
+
+footer {
+  height: 200px;
+  padding-left: 20px;
+  line-height: 50px;
+}
+footer .copyright{
+  text-align: left;
+}
